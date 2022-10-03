@@ -43,8 +43,9 @@ body{
     border-radius: 10px 0 0 10px;
 }
 .img .mobile_img{
-    width: 100%;
+    width: 90vw;
     height: 100%;
+    object-fit: cover;
     display: none;
 }
 
@@ -97,4 +98,35 @@ body{
 
 .btn button label{
 margin-bottom: 10px;
+} 
+@media (max-width:740px){
+    .container{
+        flex-wrap: wrap;
+        width: 90vw;
+        height:fit-content;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .img{
+        width: 90vh;
+        height: fit-content;
+    }
+    .img .mobile_img{
+        display: block;
+    }
+    .img .desktop_img{
+        display: none;
+    }
+    .img .mobile_img img{
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+        
+    }.text{
+        margin: auto;
+    }
+    body{
+        height: 100%;
+    }
 }
